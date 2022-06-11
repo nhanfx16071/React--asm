@@ -58,5 +58,38 @@ const StaffList = () => {
           onClick={() => columnSelect("col-md-3 mt-1")}
           className="btn btn-secondary col-2"
         >
+          4 cột
+        </button>
+        <button
+          style={{ marginRight: 10 }}
+          onClick={() => columnSelect("col-md-4 mt-1")}
+          className="btn btn-success col-2"
+        >
+          3 cột
+        </button>
+        <button
+          style={{ marginRight: 10 }}
+          onClick={() => columnSelect("col-md-6 mt-1")}
+          className="btn btn-info col-2"
+        >
+          2 cột
+        </button>
+        <button
+          onClick={() => columnSelect("col-md-12 mt-1")}
+          className="btn btn-warning col-2"
+        >
+          1 cột
+        </button>
+      </div>
+      <div className="row mt-5"></div>
+      <div
+        className="row"
+        style={{
+          padding: "0 20px",
+          margin: "0 20px",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
 }
-          export default StaffList;
+        export default StaffList;
