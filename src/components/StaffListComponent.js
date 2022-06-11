@@ -51,5 +51,12 @@ const StaffList = () => {
           onClick={() => columnSelect("col-md-2 mt-1")}
           className="btn btn-primary col-2"
         >
+          6 cột
+        </button>
+        <button
+          style={{ marginRight: 10 }}
+          onClick={() => columnSelect("col-md-3 mt-1")}
+          className="btn btn-secondary col-2"
+        >
 }
           export default StaffList;
