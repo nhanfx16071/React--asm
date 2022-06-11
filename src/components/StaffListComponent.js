@@ -21,6 +21,10 @@ const StaffList = () => {
                 selectedStaff.doB,
                 "dd/mm/yyyy"
               )}`}</CardText>
+              <CardText>{`Ngày vào công ty: ${dateFormat(
+                selectedStaff.startDate,
+                "dd/mm/yyyy"
+              )}`}</CardText>
 
 
 
