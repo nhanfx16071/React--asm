@@ -25,14 +25,24 @@ const StaffList = () => {
                 selectedStaff.startDate,
                 "dd/mm/yyyy"
               )}`}</CardText>
+              <CardText>{`Ngày vào công ty: ${dateFormat(
+                selectedStaff.startDate,
+                "dd/mm/yyyy"
+              )}`}</CardText>
+              <CardText>{`Phòng ban: ${selectedStaff.department.name}`}</CardText>
+              <CardText>{`Số ngày nghỉ còn lại: ${selectedStaff.annualLeave}`}</CardText>
+              <CardText>{`Số ngày đã làm thêm: ${selectedStaff.overTime}`}</CardText>
+            </CardBody>
+          </Card>
+        </div>
+      );
 
 
 
 
 
-
-              return (
-              <div className="container">
-              </div>)
-}
-              export default StaffList;
+      return (
+        <div className="container">
+        </div>)
+    }
+    export default StaffList;
