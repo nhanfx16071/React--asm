@@ -46,5 +46,10 @@ const StaffList = () => {
         className="row m-3"
         style={{ padding: 10, display: "flex", justifyContent: "center" }}
       >
+        <button
+          style={{ marginRight: 10 }}
+          onClick={() => columnSelect("col-md-2 mt-1")}
+          className="btn btn-primary col-2"
+        >
 }
-        export default StaffList;
+          export default StaffList;
