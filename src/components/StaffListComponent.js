@@ -40,13 +40,11 @@ const StaffList = () => {
       return <div></div>;
     }
   };
-
-
-
-
-
   return (
     <div className="container">
-    </div>)
+      <div
+        className="row m-3"
+        style={{ padding: 10, display: "flex", justifyContent: "center" }}
+      >
 }
-export default StaffList;
+        export default StaffList;
