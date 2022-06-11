@@ -36,13 +36,17 @@ const StaffList = () => {
           </Card>
         </div>
       );
-
-
-
-
-
-      return (
-        <div className="container">
-        </div>)
+    } else {
+      return <div></div>;
     }
-    export default StaffList;
+  };
+
+
+
+
+
+  return (
+    <div className="container">
+    </div>)
+}
+export default StaffList;
