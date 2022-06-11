@@ -1,16 +1,22 @@
-import React, { Component } from 'react';
-import './App.css';
-class App extends Component {
+import React from "react";
+import { Navbar, NavbarBrand } from "reactstrap";
+import StaffList from "./components/StaffListComponent.js";
+import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
 
-  render() {
-    return (
-      <div className="App">
-        <p>Sample cho toàn bộ lab và project trong môn học Lập Trình Web Front-End với React với đầy đủ dependency.</p>
-        <p>Phiên bản React hiện tại trên máy của bạn là: {React.version}</p>
-        <p>Phiên bản React đã được sử dụng để thiết kế môn học: 16.14.0.</p>
-      </div>
-    );
-  }
-}
+//Declaring App
+const App = () => {
+  return (
+    //Display Navbar and staffs when click
+    <div>
+      <Navbar dark color="primary">
+        <div className="container">
+          <NavbarBrand href="/">Ứng dụng quản lý nhân sự v1.0</NavbarBrand>
+        </div>
+      </Navbar>
+      <StaffList />
+    </div>
+  );
+};
 
 export default App;
