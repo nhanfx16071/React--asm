@@ -15,14 +15,20 @@ const StaffList = () => {
               src={selectedStaff.image}
               alt={selectedStaff.name}
             />
+            <CardBody>
+              <CardTitle>{`Họ và tên: ${selectedStaff.name}`}</CardTitle>
+              <CardText>{`Ngày sinh: ${dateFormat(
+                selectedStaff.doB,
+                "dd/mm/yyyy"
+              )}`}</CardText>
 
 
 
 
 
 
-            return (
-            <div className="container">
-            </div>)
+              return (
+              <div className="container">
+              </div>)
 }
-            export default StaffList;
+              export default StaffList;
