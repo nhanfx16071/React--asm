@@ -1,21 +1,16 @@
 import React from "react";
-import { Navbar, NavbarBrand } from "reactstrap";
-import StaffList from "./components/StaffListComponent.js";
+import Main from "./components/Main";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 
-//Declaring App
 const App = () => {
   return (
-    //Display Navbar and staffs when click
-    <div>
-      <Navbar dark color="primary">
-        <div className="container">
-          <NavbarBrand href="/">Ứng dụng quản lý nhân sự v1.0</NavbarBrand>
-        </div>
-      </Navbar>
-      <StaffList />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Main />
+      </div>
+    </BrowserRouter>
   );
 };
 
